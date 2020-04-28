@@ -2,6 +2,10 @@
 [![Build Status](https://api.travis-ci.org/FontCustom/fontcustom.png)](https://travis-ci.org/FontCustom/fontcustom)
 [![Code Quality](https://codeclimate.com/github/FontCustom/fontcustom.png)](https://codeclimate.com/github/FontCustom/fontcustom) [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=32953)](https://www.bountysource.com/trackers/32953-endtwist-fontcustom?utm_source=32953&utm_medium=shield&utm_campaign=TRACKER_BADGE)
 
+## Notes on this fork
+
+FontCustom seems to be a dead company; their website redirects to random crapware and this gem has not been updated since 2017. It pins JSON to a version with security vulnerabilities, so in this fork I'm loosening the gem restrictions. I'd suggest to anyone using the gem to migrate to something else, because that's what I'll be doing.
+
 ## Font Custom
 
 **Icon fonts from the command line.**
