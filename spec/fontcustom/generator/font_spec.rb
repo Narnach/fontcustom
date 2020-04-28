@@ -19,6 +19,7 @@ describe Fontcustom::Generator::Font do
     end
 
     it "should generate fonts (integration)", :integration => true do
+      pending "Broken on macOS Catalina"
       live_test do |testdir|
         test_manifest
         manifest = File.join Dir.pwd, ".fontcustom-manifest.json"

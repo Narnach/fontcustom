@@ -3,6 +3,7 @@ require "spec_helper"
 describe Fontcustom::Generator::Template do
   context "#generate" do
     it "should generate templates (integration)", :integration => true do
+      pending "Broken on macOS Catalina"
       live_test do |testdir|
         FileUtils.cp_r fixture("generators/mixed-output"), "fontcustom"
         test_manifest(

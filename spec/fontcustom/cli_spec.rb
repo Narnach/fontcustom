@@ -4,6 +4,7 @@ require "fontcustom/cli"
 describe Fontcustom::CLI do
   context "#compile" do
     it "should generate fonts and templates (integration)", :integration => true do
+      pending "Broken on macOS Catalina"
       live_test do |testdir|
         Fontcustom::CLI.start ["compile", "vectors", "--quiet"]
         manifest = File.join testdir, ".fontcustom-manifest.json"
@@ -17,6 +18,7 @@ describe Fontcustom::CLI do
 
     it "should generate fonts and templates according to passed options (integration)", :integration => true do
       live_test do |testdir|
+        pending "Broken on macOS Catalina"
         Fontcustom::CLI.start ["compile", "vectors", "--font-name", "example", "--preprocessor-path", "../foo/bar", "--templates", "css", "scss-rails", "preview", "--no-hash", "--base64", "--quiet"]
         manifest = File.join testdir, ".fontcustom-manifest.json"
         css = Dir.glob(File.join("example", "*.scss")).first
